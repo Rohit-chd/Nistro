@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "371728689869",
+    "firebase_url": "https://nestro-3da82.firebaseio.com",
+    "project_id": "nestro-3da82",
+    "storage_bucket": "nestro-3da82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371728689869:android:0aca22fb7e10e258a81784",
+        "android_client_info": {
+          "package_name": "com.nistro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371728689869-au7v3qmln8vs62h3lessqre2iu1jlhvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPpducaCQaveZgKtKkO8x3_3NfSFJkf9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371728689869-au7v3qmln8vs62h3lessqre2iu1jlhvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

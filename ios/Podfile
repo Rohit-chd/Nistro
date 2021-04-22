@@ -1,0 +1,62 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '10.0'
+
+
+target 'Nistro' do
+  config = use_native_modules!
+
+  use_react_native!(:path => config["reactNativePath"])
+
+  permissions_path = '../node_modules/react-native-permissions/ios'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+  
+# add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
+# add pods for any other desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
+
+
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+
+  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
+
+  pod 'rn-fetch-blob',
+    :path => '../node_modules/rn-fetch-blob'
+  #pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+
+  pod 'RNSpotify', :path => '../node_modules/rn-spotify-sdk'
+
+  pod 'RNEventEmitter', :path => '../node_modules/react-native-events'
+
+  pod 'react-native-app-auth', :path => '../node_modules/react-native-app-auth'
+
+  target 'NistroTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable these next few lines.
+  use_flipper!
+  post_install do |installer|
+    flipper_post_install(installer)
+  end
+end
+
+target 'Nistro-tvOS' do
+  # Pods for Nistro-tvOS
+
+  target 'Nistro-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end

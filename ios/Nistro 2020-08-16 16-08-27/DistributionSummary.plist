@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Nistro.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>E8726D6695C41014A5D4D259464D87B34664BCD4</string>
+				<key>dateExpires</key>
+				<string>15/08/21</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>A6WRPKV944.com.rajeev.Nistro</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>A6WRPKV944</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>A6WRPKV944.com.rajeev.Nistro</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Nistro.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>15df4de9-06a1-4d12-9d70-282da9090369</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.rajeev.Nistro</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>A6WRPKV944</string>
+				<key>name</key>
+				<string>Winx Limited</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
